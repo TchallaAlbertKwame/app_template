@@ -6,9 +6,9 @@ A #Flutter #template that can be used for all your flutter #projects. You can mo
 
 Clone the repo:  [https://github.com/TchallaAlbertKwame/app_template.git](https://github.com/TchallaAlbertKwame/app_template.git)
 ## Run:  
-_* flutter clean  
-_* flutter pub get   
-_* flutter run  
+flutter clean  
+flutter pub get   
+ flutter run  
 ### Enjoy flutter development!
 
 
