@@ -1,0 +1,60 @@
+name: app_template
+description: A template that can be used for all flutter your projects. You can modify to suit your use case. I normally prefer to go by this approach. and the folder structure proposed in this repo.
+
+
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.1.1 <4.0.0' #TODO:Ensure you change  the version to the right one to match the version of flutter you installed.
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # The packages used for the app
+  cupertino_icons: ^1.0.2
+  image_picker: ^1.0.4
+  http: ^1.1.0
+  flutter_launcher_icons: ^0.13.1
+  mongo_dart: ^0.10.0
+  image: ^4.1.3
+  shared_preferences: ^2.2.2
+  jwt_decoder: ^2.0.1
+  intl: ^0.19.0
+  flutter_form_builder: ^9.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+
+  #   The assets used in the project
+  assets:
+    - assets/images/
+    - assets/
+
+
+# To generate the app icons for all the platforms (the ones you selected from the list while creating you app). If you use the command line 'flutter create .', you don't get to select the platforms.
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/logo.png"
+
+  web:
+    generate: true
+    image_path: "assets/images/logo.png"
+    background_color: "#hexcode"
+    theme_color: "#hexcode"
+  windows:
+    generate: true
+    image_path: "assets/images/logo.png"
+    icon_size: 48 # min:48, max:256, default: 48
+  macos:
+    generate: true
+    image_path: "assets/images/logo.png"
